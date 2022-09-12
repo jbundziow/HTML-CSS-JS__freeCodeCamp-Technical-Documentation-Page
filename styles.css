@@ -1,0 +1,351 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    background-color: rgb(27,27,27);
+    color: white;
+    font-family: Inter, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-sans;
+    font-size: 16px;
+}
+
+/* NAVBAR STYLING */
+
+#navbar {
+    position:fixed;
+
+  height: 100%;
+  width: 15%;
+  top:0;
+  left:0;
+  overflow: hidden;
+  padding-right: 15px;
+  padding-bottom: 15px;
+}
+
+.nav-link{
+    display: block;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(48,48,48);
+    width: 90%;
+    margin: 7px auto;
+    text-align: center;
+    font-size: 1.4rem;
+    border-radius: 0 5px 5px 0;
+}
+
+#icon-menu {
+    visibility: hidden;
+  }
+
+  .nav-link:hover #icon-menu {
+    visibility: visible;
+  }
+
+  .nav-link:hover {
+    background-color: rgb(247,224,24);
+    color: black;
+    transform: scale(1.05);
+    transform: translateX(15px);
+    box-shadow: 0 0 10px rgb(247,224,24);
+    transition-duration: 1s;
+  }
+
+
+
+/* END ---------------------- NAVBAR STYLING */
+
+/* LOGO IN NAVBAR */
+
+#navbar header {
+display: block;
+margin: 10px 0px 10px 15px;
+padding: 5px 0 5px 5px;
+max-width: 250px;
+
+}
+
+
+#JS-logo {
+    
+    display: table-cell;
+    vertical-align: bottom;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(247,224,24);
+    text-align: right;
+    
+}
+
+#JS-logo span {
+    
+    color: rgb(0,0,0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    padding-right: 3px;
+    padding-bottom: 3px;
+}
+
+#documentation {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
+#navbar header a {
+    text-decoration: none;
+}
+
+header a {
+    display: block;
+    color: white;
+    text-align: center;
+}
+
+/* END ---------------------- LOGO IN NAVBAR */
+
+
+#main-doc {
+    display: block;
+    width: 83%;
+    float: right;
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+
+.header-title {
+    display: inline-block;
+    font-family: Book Antiqua;
+    font-size: 32px;
+    font-weight: 800;
+    margin-left: -50px;
+    margin-top: 30px;
+    
+}
+
+.array-icn {
+    visibility: hidden;
+    color: rgb(247,224,24);
+}
+
+.header-title:hover {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    text-decoration-style: solid;
+    text-decoration-color: rgb(247,224,24);
+    text-decoration-thickness: 2px;
+    margin-left: 0px;
+    transition-duration: 0.5s;
+}
+
+.header-title:hover .array-icn {
+    
+    visibility: visible;
+}
+
+code {
+    background-color: rgb(52,52,52);
+    display: block;
+    padding: 20px;
+    margin: 5px;
+    border: 1px solid rgb(247,224,24);
+    width: 60%;
+}
+
+#Reference a {
+    color: rgb(247,224,24);
+}
+
+/* AUTHOR STYLING */
+.author hr {
+    width: 25%;
+   margin: 70px auto 0px auto;
+   border: 1px dotted white;
+}
+
+.author p {
+    font-family: monospace;
+    text-align: center;
+    margin: 2px auto;
+    padding-top: 4px;
+}
+
+.author a {
+    font-family: monospace;
+    color: white;
+
+}
+/* BUTTON SCROLL-UP ----------------------- */
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    background-color: yellow;
+    color: black;
+    cursor: pointer;
+    padding: 9px 10px;
+    border-radius: 15px;
+    font-size: 18px; 
+    opacity: 0.5;
+  }
+  
+  #topBtn:hover {
+    background-color: rgb(48,48,48);
+    color: white;
+    opacity: 1;
+    transition-duration: 0.3s;
+  }
+
+  /* END BUTTON SCROLL-UP -------------------- */
+
+/* MEDIA --------------------------- */
+
+@media (min-width: 1400px) {
+    #navbar header {
+        border: 1px solid white;
+    }
+
+    header a {
+        border: none;
+        width: auto;
+    }
+}
+
+/*GENERAL RULES -------------------- */
+@media (max-width: 1400px) {
+    #navbar {
+        position: static;   
+        width: 100%;
+        height: auto;
+    }
+
+
+
+
+    .nav-link {
+        border-radius: 5px;
+
+        display: inline-block;
+        white-space:nowrap;
+        overflow:hidden;
+        text-overflow:ellipsis;   
+    }
+
+
+    .nav-link:hover {
+        background-color: rgb(247,224,24);
+        color: black;
+        transform: scale(1.01);
+        box-shadow: 0 0 15px rgb(247,224,24);
+        transition-duration: 1s;
+      }
+
+
+#main-doc {
+    display: block;
+}
+
+#navbar header {
+    border: none;
+}
+header a {
+border: 1px solid white;
+width: 200px;
+padding: 5px;
+}
+
+
+
+}
+/*END GENERAL RULES ---------------- */
+
+
+
+
+@media (max-width: 1400px) {
+
+#navbar {
+    margin-left: 10px;
+}
+
+    .nav-link {
+        width: 32%;
+        font-size: 2vw;
+        margin: 3px auto;
+    }
+
+#main-doc {
+    width: 98%;
+}
+
+code {
+    width: 70%;
+}
+
+}
+
+
+@media (max-width: 1000px) {
+
+    #navbar {
+        margin-left: 3px;
+    }
+    
+        .nav-link {
+            width: 49%;
+            font-size: 2.5vw;
+            margin: 1px auto;
+        }
+    
+    #main-doc {
+        width: 95%;
+    }
+
+    code {
+        margin: 3px auto;
+        width: 80%;
+    }
+    
+    }
+
+    @media (max-width: 700px) {
+
+        #navbar {
+            margin-left: 3px;
+            text-align: center;
+        }
+        
+            .nav-link {
+                width: 90%;
+                font-size: 4vw;
+                margin: 2px auto;
+            }
+        
+        #main-doc {
+            width: 93%;
+        }
+
+        .header-title {
+            font-size: 5vw;
+        }
+
+        code {
+            margin: 3px auto;
+            width: 95%;
+            font-size: 3vw;
+            padding: 6px;
+        }
+        
+        }
+
+
+/* END MEDIA ---------------------- */
